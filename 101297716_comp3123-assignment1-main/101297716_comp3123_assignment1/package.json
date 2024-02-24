@@ -1,0 +1,25 @@
+{
+  "name": "101297716_COMP3123_Assignment1",
+  "version": "1.0.0",
+  "description": "Assignment1 for comp3123",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "keywords": [
+    "nodeJS",
+    "Assignment1",
+    "mongoDB",
+    "mongoose"
+  ],
+  "author": "Nizar Atassi",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.1.0",
+    "mongoose": "^5.2.8"
+  }
+}
