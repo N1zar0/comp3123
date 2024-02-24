@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  mongodb:
+    container_name: assignment2
+    image: mongo
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongodb_data:/data/db
+
+  backend:
+    build: .
+    ports:
+      - '3000:3000'
+    depends_on:
+      - mongodb
+    environment:
+      MONGO_URI: mongodb://assignment2:27017/assignment2
+
+volumes:
+  mongodb_data:
